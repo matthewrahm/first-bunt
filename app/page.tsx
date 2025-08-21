@@ -8,8 +8,8 @@ import Footer from '@/components/Footer';
 // [ASSUMED] Configuration - Replace with your actual values
 const CONFIG = {
   // Token details
-  TOKEN_NAME: 'Bunt Coin',
-  TOKEN_SYMBOL: 'BUNT',
+  TOKEN_NAME: '$BLUNT',
+  TOKEN_SYMBOL: 'BLUNT',
   CHAIN_ID: process.env.NEXT_PUBLIC_CHAIN_ID || 'solana',
   TOKEN_ADDRESS:
     process.env.NEXT_PUBLIC_TOKEN_ADDRESS ||

@@ -43,14 +43,44 @@ export default function HeroSpline() {
     }
   }, []);
 
+  // Simple Spline branding removal
+  useEffect(() => {
+    const removeSplineBranding = () => {
+      // Only target the specific Spline branding element
+      const splineLogo = document.querySelector(
+        'a[id="logo"][href*="spline.design"]'
+      );
+      if (splineLogo) {
+        splineLogo.remove();
+        console.log('Removed Spline logo');
+      }
+    };
+
+    // Remove immediately
+    removeSplineBranding();
+
+    // Check every 100ms
+    const interval = setInterval(removeSplineBranding, 100);
+
+    // Also check after delays
+    const timers = [500, 1000, 2000].map(delay =>
+      setTimeout(removeSplineBranding, delay)
+    );
+
+    return () => {
+      clearInterval(interval);
+      timers.forEach(timer => clearTimeout(timer));
+    };
+  }, []);
+
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* Simplified background overlay */}
-      <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none" />
+      {/* Simple 10% yellow/gold glow overlay */}
+      <div className="absolute inset-0 bg-yellow-400/10 z-10 pointer-events-none" />
 
-      {/* Direct Spline Viewer - Using local file with performance optimizations */}
+      {/* Direct Spline Viewer - Using external URL without branding */}
       <spline-viewer
-        url="/scene.splinecode"
+        url="https://prod.spline.design/PWEvFtXYjYKhHjZ9/scene.splinecode"
         className="w-full h-full"
         style={{
           position: 'absolute',
@@ -62,6 +92,7 @@ export default function HeroSpline() {
           transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
           perspective: '1000px',
+          zIndex: 5,
         }}
       />
 
@@ -69,9 +100,8 @@ export default function HeroSpline() {
       <div className="absolute inset-0 flex flex-col justify-between z-40 pointer-events-none">
         {/* Top section - BuntCoin title on green line */}
         <div className="flex flex-col justify-center items-center text-center text-white pt-32">
-          <h1 className="text-6xl md:text-8xl font-bold text-center">
-            <span className="text-gold-300">Bunt</span>
-            <span className="text-white">Coin</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-center">
+            <span className="text-gold-300">$BLUNT</span>
           </h1>
         </div>
 
@@ -79,8 +109,8 @@ export default function HeroSpline() {
         <div className="flex flex-col justify-center items-center text-center text-white pb-20">
           {/* Subtext */}
           <p className="text-xl md:text-2xl text-gold-200 mb-8 max-w-2xl mx-auto text-center">
-            The next big Solana meme coin. Join the community and ride the wave
-            to the moon!
+            $BLUNT is the first certified runner on bunt.fun. Come roll up with
+            a $BLUNT!
           </p>
 
           {/* Buttons */}

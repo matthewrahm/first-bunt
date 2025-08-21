@@ -10,42 +10,42 @@ export default function AboutSection() {
       title: 'Moon Mission',
       description:
         'Built for the community, by the community. Our goal is simple: to the moon and beyond!',
-      color: 'from-pink-500 to-purple-500',
+      color: 'from-yellow-400 to-gold-500',
     },
     {
       icon: Users,
       title: 'Strong Community',
       description:
         'Join thousands of Bunt Coin holders who believe in the power of community-driven projects.',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-gold-300 to-yellow-500',
     },
     {
       icon: Shield,
       title: 'Secure & Transparent',
       description:
         'Built on Solana with audited smart contracts and transparent tokenomics.',
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-yellow-500 to-gold-400',
     },
     {
       icon: Zap,
       title: 'Lightning Fast',
       description:
         'Solana blockchain ensures instant transactions and minimal fees for all your trading needs.',
-      color: 'from-yellow-500 to-orange-500',
+      color: 'from-gold-400 to-yellow-600',
     },
     {
       icon: Star,
       title: 'Innovation First',
       description:
         'Constantly evolving with new features, partnerships, and community-driven initiatives.',
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-yellow-300 to-gold-500',
     },
     {
       icon: Heart,
       title: 'Community Driven',
       description:
         'Every decision is made with the community in mind. Your voice matters!',
-      color: 'from-red-500 to-pink-500',
+      color: 'from-gold-500 to-yellow-400',
     },
   ];
 
@@ -60,12 +60,12 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-gold-300">Bunt Coin</span>
+            About <span className="text-gold-300">$BLUNT</span>
           </h2>
           <p className="text-xl text-gold-200 max-w-3xl mx-auto leading-relaxed">
-            Bunt Coin is more than just another meme coin. It's a movement, a
-            community, and a vision for the future of decentralized finance on
-            Solana.
+            $BLUNT is the first certified runner on bunt.fun. We took the bunt
+            ecosystem, rolled it up, and are smoking on all the rewards. Come
+            roll up with a $BLUNT!
           </p>
         </motion.div>
 
@@ -78,24 +78,23 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3 className="text-3xl font-bold text-white mb-6">
-              The Story Behind <span className="text-gold-300">Bunt Coin</span>
+              The Story Behind <span className="text-gold-300">$BLUNT</span>
             </h3>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
-                Born from the depths of the Solana ecosystem, Bunt Coin emerged
-                as a beacon of hope for meme coin enthusiasts who believe in the
-                power of community-driven projects.
+                $BLUNT is the first certified runner on bunt.fun, and we're not
+                just another meme coin - we're the OG's who know how to roll up
+                and smoke the competition.
               </p>
               <p>
-                Our journey began with a simple idea: create a token that's not
-                just about profits, but about building something meaningful
-                together. We wanted to prove that meme coins could be more than
-                just speculative assets.
+                We took the bunt ecosystem, rolled it up tight, and now we're
+                smoking on all the rewards. This isn't your grandma's crypto -
+                it's the real deal for those who know how to play the game.
               </p>
               <p>
-                Today, Bunt Coin stands as a testament to what's possible when a
-                community comes together with a shared vision. We're not just
-                holders; we're builders, dreamers, and moon-walkers.
+                Come roll up with a $BLUNT and join the most lit community in
+                the Solana space. We're not just holders; we're runners,
+                smokers, and absolute legends.
               </p>
             </div>
 
@@ -132,11 +131,9 @@ export default function AboutSection() {
                 <div className="w-24 h-24 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-ink-900">BC</span>
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-4">
-                  Bunt Coin
-                </h4>
+                <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
                 <p className="text-gold-200 mb-6">
-                  The most reliable companion in your crypto journey
+                  The first certified runner on bunt.fun
                 </p>
                 <div className="space-y-3 text-sm text-gray-300">
                   <div className="flex justify-between">
@@ -164,7 +161,7 @@ export default function AboutSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <h3 className="text-3xl font-bold text-white text-center mb-12">
-            Why Choose <span className="text-gold-300">Bunt Coin</span>?
+            Why Choose <span className="text-gold-300">$BLUNT</span>?
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -204,19 +201,19 @@ export default function AboutSection() {
         >
           <div className="bg-gradient-to-r from-ink-800/50 to-ink-700/50 border border-ink-600 rounded-2xl p-12">
             <h3 className="text-3xl font-bold text-white mb-6">
-              Ready to Join the <span className="text-gold-300">Bunt Coin</span>{' '}
-              Family?
+              Ready to Roll Up with{' '}
+              <span className="text-gold-300">$BLUNT</span>?
             </h3>
             <p className="text-xl text-gold-200 mb-8 max-w-2xl mx-auto">
-              Don't miss out on the next big thing in the Solana ecosystem. Join
-              thousands of holders who are already on their way to the moon!
+              Don't miss out on the first certified runner on bunt.fun. Join
+              thousands of holders who are already smoking the competition!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#token"
                 className="bg-gold-300 hover:bg-gold-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gold-300/25"
               >
-                Get Bunt Coin Now
+                Get $BLUNT Now
               </a>
               <a
                 href="#live-stats"

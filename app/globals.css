@@ -52,6 +52,53 @@ spline-viewer {
   perspective: 1000px;
 }
 
+/* TEMPORARILY DISABLED - Testing JavaScript-only approach */
+/* Hide Spline branding - ULTRA SPECIFIC RULES */
+/* Only target the exact Spline branding elements, preserve everything else */
+/*
+a[id="logo"][href*="spline.design"]:not([data-spline-viewer]),
+a[href*="utm_source=spline-viewer"]:not([data-spline-viewer]),
+svg[viewBox="0 0 89 13"]:not([data-spline-viewer]) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+*/
+
+/* Hide Spline branding within spline-viewer */
+spline-viewer::part(spline-branding),
+spline-viewer::part(spline-attribution) {
+  display: none !important;
+}
+
+/* Alternative method to hide Spline branding */
+spline-viewer [data-spline-branding],
+spline-viewer [data-spline-attribution] {
+  display: none !important;
+}
+
+/* Hide Spline logo specifically */
+spline-viewer #logo,
+spline-viewer a[id="logo"],
+spline-viewer [id="logo"] {
+  display: none !important;
+}
+
+/* Hide any Spline attribution elements */
+spline-viewer a[href*="spline.design"],
+spline-viewer a[href*="utm_source=spline-viewer"] {
+  display: none !important;
+}
+
+/* Hide Spline SVG logo */
+spline-viewer svg[viewBox="0 0 89 13"] {
+  display: none !important;
+}
+
 html,
 body {
   max-width: 100vw;

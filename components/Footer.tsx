@@ -62,11 +62,12 @@ export default function Footer() {
               <div className="w-12 h-12 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center">
                 <span className="text-xl font-bold text-ink-900">BC</span>
               </div>
-              <span className="text-2xl font-bold text-white">Bunt Coin</span>
+              <span className="text-2xl font-bold text-white">$BLUNT</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              The next big Solana meme coin. Join our community and be part of
-              something special. Together we'll reach the moon and beyond!
+              $BLUNT is the first certified runner on bunt.fun. We took the bunt
+              ecosystem, rolled it up, and are smoking on all the rewards. Come
+              roll up with a $BLUNT!
             </p>
 
             {/* Social Links */}
@@ -183,11 +184,11 @@ export default function Footer() {
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-400" />
-              <span>by the Bunt Coin community</span>
+              <span>by the $BLUNT community</span>
             </div>
 
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Bunt Coin. All rights reserved.
+              © {new Date().getFullYear()} $BLUNT. All rights reserved.
             </div>
           </div>
         </motion.div>
