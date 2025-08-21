@@ -129,7 +129,7 @@ export default function AboutSection() {
               {/* Main card */}
               <div className="relative bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-3xl p-8 text-center">
                 <div className="w-24 h-24 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-ink-900">BC</span>
+                  <span className="text-2xl font-bold text-ink-900">B</span>
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
                 <p className="text-gold-200 mb-6">

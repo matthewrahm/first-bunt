@@ -43,12 +43,12 @@ export default function Home() {
         chainId={CONFIG.CHAIN_ID}
       />
 
-      {/* Live Market Stats */}
-      <StatsTicker
+      {/* Live Market Stats - Hidden for now */}
+      {/* <StatsTicker
         chainId={CONFIG.CHAIN_ID}
         pairId={CONFIG.PAIR_ID}
         pollInterval={CONFIG.DEXSCREENER_POLL_MS}
-      />
+      /> */}
 
       {/* Footer */}
       <Footer />
