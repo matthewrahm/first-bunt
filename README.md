@@ -25,7 +25,7 @@ A production-ready, single-page marketing website for the Yellow Pup Solana meme
 
 ## 📋 Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm 9+ or yarn
 - Git
 
@@ -87,7 +87,7 @@ const CONFIG = {
   TOKEN_NAME: 'Your Token Name',
   TOKEN_SYMBOL: 'SYMBOL',
   // ... other config
-}
+};
 ```
 
 ### Modifying the Theme
@@ -188,6 +188,7 @@ netlify deploy --prod --dir=.next
 ### Other Platforms
 
 The site can be deployed to any platform that supports Next.js:
+
 - Vercel
 - AWS Amplify
 - Railway
@@ -198,6 +199,7 @@ The site can be deployed to any platform that supports Next.js:
 ### Lighthouse Scores
 
 Target scores for all categories:
+
 - **Performance**: ≥ 90
 - **Accessibility**: ≥ 90
 - **Best Practices**: ≥ 90
@@ -328,4 +330,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ by the Yellow Pup community**
 
-*To the moon and beyond! 🚀*
+_To the moon and beyond! 🚀_

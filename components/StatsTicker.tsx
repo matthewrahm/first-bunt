@@ -209,7 +209,7 @@ export default function StatsTicker({
             change={formattedStats?.priceChange}
             icon={DollarSign}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
 
           <StatCard
@@ -217,7 +217,7 @@ export default function StatsTicker({
             value={formattedStats?.marketCap || '--'}
             icon={Coins}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
 
           <StatCard
@@ -225,7 +225,7 @@ export default function StatsTicker({
             value={formattedStats?.fdv || '--'}
             icon={BarChart3}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
 
           <StatCard
@@ -233,7 +233,7 @@ export default function StatsTicker({
             value={formattedStats?.liquidity || '--'}
             icon={Activity}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
 
           <StatCard
@@ -241,7 +241,7 @@ export default function StatsTicker({
             value={formattedStats?.volume || '--'}
             icon={TrendingUp}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
 
           <StatCard
@@ -254,7 +254,7 @@ export default function StatsTicker({
             change={formattedStats?.priceChange}
             icon={TrendingUp}
             isLoading={isLoading}
-            error={error}
+            error={error || undefined}
           />
         </div>
 

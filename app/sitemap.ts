@@ -1,8 +1,8 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yellowpup.com'
-  
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yellowpup.com';
+
   return [
     {
       url: baseUrl,
@@ -28,5 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'hourly',
       priority: 0.9,
     },
-  ]
+  ];
 }

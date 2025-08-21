@@ -71,10 +71,10 @@ export default function Navigation() {
                 }}
                 className="flex items-center space-x-2 text-white hover:text-gold-300 transition-colors"
               >
-                                 <div className="w-8 h-8 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center">
-                   <span className="text-sm font-bold text-ink-900">BC</span>
-                 </div>
-                 <span className="text-xl font-bold">Bunt Coin</span>
+                <div className="w-8 h-8 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center">
+                  <span className="text-sm font-bold text-ink-900">BC</span>
+                </div>
+                <span className="text-xl font-bold">Bunt Coin</span>
               </a>
             </motion.div>
 
