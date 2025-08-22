@@ -75,9 +75,6 @@ export default function HeroSpline() {
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* Simple 10% yellow/gold glow overlay */}
-      <div className="absolute inset-0 bg-yellow-400/10 z-10 pointer-events-none" />
-
       {/* Direct Spline Viewer - Using external URL without branding */}
       <spline-viewer
         url="https://prod.spline.design/de0sjz54PTNiLHaD/scene.splinecode"
@@ -89,7 +86,7 @@ export default function HeroSpline() {
           width: '100%',
           height: '100%',
           willChange: 'transform',
-          transform: 'translateZ(0) scale(2.0)',
+          transform: 'translateZ(0) scale(1.4)',
           backfaceVisibility: 'hidden',
           perspective: '1000px',
           zIndex: 5,
