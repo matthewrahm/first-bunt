@@ -5,6 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import useSWR from 'swr';
 import { DexScreenerClient, MarketStats } from '@/lib/dexscreener';
 import {
+  useScrollAnimation,
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+} from '../lib/useScrollAnimation';
+import {
   TrendingUp,
   TrendingDown,
   DollarSign,
@@ -27,6 +33,7 @@ function StatCard({
   icon: Icon,
   isLoading,
   error,
+  isVisible,
 }: {
   title: string;
   value: string;
@@ -34,6 +41,7 @@ function StatCard({
   icon: any;
   isLoading: boolean;
   error?: string;
+  isVisible: boolean;
 }) {
   const isPositive = change && change > 0;
   const isNegative = change && change < 0;
@@ -42,8 +50,9 @@ function StatCard({
     <motion.div
       className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-300/10"
       whileHover={{ y: -2 }}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={fadeInUp}
     >
       <div className="flex items-center justify-between mb-4">
         <div className="p-2 bg-gold-300/10 rounded-lg">
@@ -84,6 +93,7 @@ export default function StatsTicker({
   pairId,
   pollInterval = 15000,
 }: StatsTickerProps) {
+  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
   const [lastUpdate, setLastUpdate] = useState<Date>(new Date());
   const [error, setError] = useState<string | null>(null);
   const [isClient, setIsClient] = useState(false);
@@ -176,14 +186,15 @@ export default function StatsTicker({
   const formattedStats = stats ? formatStats(stats) : null;
 
   return (
-    <section className="py-20 px-4" id="live-stats">
+    <section className="py-20 px-4" id="live-stats" ref={elementRef}>
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+          variants={fadeInUp}
+          transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Live <span className="text-gold-300">Market Stats</span>
@@ -210,6 +221,7 @@ export default function StatsTicker({
             icon={DollarSign}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
 
           <StatCard
@@ -218,6 +230,7 @@ export default function StatsTicker({
             icon={Coins}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
 
           <StatCard
@@ -226,6 +239,7 @@ export default function StatsTicker({
             icon={BarChart3}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
 
           <StatCard
@@ -234,6 +248,7 @@ export default function StatsTicker({
             icon={Activity}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
 
           <StatCard
@@ -242,6 +257,7 @@ export default function StatsTicker({
             icon={TrendingUp}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
 
           <StatCard
@@ -255,6 +271,7 @@ export default function StatsTicker({
             icon={TrendingUp}
             isLoading={isLoading}
             error={error || undefined}
+            isVisible={isVisible}
           />
         </div>
 
@@ -262,9 +279,10 @@ export default function StatsTicker({
         {stats?.dexUrl && (
           <motion.div
             className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInUp}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a
               href={stats.dexUrl}

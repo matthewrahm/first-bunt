@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // TypeScript declaration for custom spline-viewer element
 declare global {
@@ -16,6 +16,18 @@ declare global {
 }
 
 export default function HeroSpline() {
+  const [scrollY, setScrollY] = useState(0);
+
+  // Handle scroll events for fade-in effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Load Spline viewer script once - optimized loading
   useEffect(() => {
     if (!document.querySelector('script[src*="spline-viewer"]')) {
@@ -94,16 +106,16 @@ export default function HeroSpline() {
       />
 
       {/* Hero content overlay */}
-      <div className="absolute inset-0 flex flex-col justify-between z-40 pointer-events-none">
-        {/* Top section - BuntCoin title on green line */}
-        <div className="flex flex-col justify-center items-center text-center text-white pt-32">
-          <h1 className="text-5xl md:text-7xl font-bold text-center">
-            <span className="text-gold-300">$BLUNT</span>
-          </h1>
-        </div>
-
-        {/* Bottom section - Subtext and buttons on red line */}
-        <div className="flex flex-col justify-center items-center text-center text-white pb-20">
+      <div className="absolute inset-0 flex flex-col justify-end z-40 pointer-events-none">
+        {/* Bottom section - Subtext and buttons */}
+        <div
+          className="flex flex-col justify-center items-center text-center text-white pb-20 transition-all duration-1000 ease-out"
+          style={{
+            opacity: Math.min(scrollY / 100, 1),
+            transform: `translateY(${Math.max(0, 20 - scrollY / 5)}px)`,
+            filter: `blur(${Math.max(0, 2 - scrollY / 50)}px)`,
+          }}
+        >
           {/* Subtext */}
           <p className="text-xl md:text-2xl text-gold-200 mb-8 max-w-2xl mx-auto text-center">
             $BLUNT is the first certified runner on bunt.fun. Come roll up with

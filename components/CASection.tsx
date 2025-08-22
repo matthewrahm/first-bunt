@@ -5,6 +5,13 @@ import { motion } from 'framer-motion';
 import { Copy, Check, QrCode, ExternalLink } from 'lucide-react';
 import toast from 'react-hot-toast';
 import QRCode from 'qrcode';
+import {
+  useScrollAnimation,
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  fadeInScale,
+} from '../lib/useScrollAnimation';
 
 interface CASectionProps {
   tokenName: string;
@@ -19,6 +26,7 @@ export default function CASection({
   contractAddress,
   chainId,
 }: CASectionProps) {
+  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
   const [copied, setCopied] = useState(false);
   const [showQR, setShowQR] = useState(false);
   const [qrCodeDataUrl, setQrCodeDataUrl] = useState<string>('');
@@ -99,13 +107,14 @@ export default function CASection({
   };
 
   return (
-    <section className="py-20 px-4" id="token">
+    <section className="py-20 px-4" id="token" ref={elementRef}>
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+          variants={fadeInUp}
+          transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             <span className="text-gold-300">{tokenName}</span> Token
@@ -121,9 +130,10 @@ export default function CASection({
           {/* Token Details */}
           <motion.div
             className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-8"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInLeft}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -147,9 +157,10 @@ export default function CASection({
           {/* Contract Address */}
           <motion.div
             className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-8"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInRight}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3 className="text-xl font-bold text-white mb-6 text-center">
               Contract Address
@@ -222,9 +233,10 @@ export default function CASection({
         {/* Additional Info */}
         <motion.div
           className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+          variants={fadeInUp}
+          transition={{ duration: 0.8, delay: 0.3 }}
         >
           <div className="bg-ink-800/50 border border-ink-700 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-white mb-4">

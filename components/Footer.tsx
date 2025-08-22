@@ -2,8 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { Twitter, MessageCircle, Globe, Heart, ArrowUp } from 'lucide-react';
+import {
+  useScrollAnimation,
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+} from '../lib/useScrollAnimation';
 
 export default function Footer() {
+  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
+  
   const socialLinks = [
     {
       name: 'Twitter',
@@ -37,7 +45,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-ink-900 border-t border-ink-800 relative overflow-hidden">
+    <footer className="bg-ink-900 border-t border-ink-800 relative overflow-hidden" ref={elementRef}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -54,9 +62,10 @@ export default function Footer() {
           {/* Brand Section */}
           <motion.div
             className="lg:col-span-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInUp}
+            transition={{ duration: 0.8 }}
           >
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center">
@@ -79,9 +88,10 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-10 h-10 bg-ink-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-gold-300 hover:text-ink-900 ${social.color}`}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
+                  initial="hidden"
+                  animate={isVisible ? 'visible' : 'hidden'}
+                  variants={fadeInUp}
+                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -93,9 +103,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInUp}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h3 className="text-lg font-semibold text-white mb-6">
               Quick Links
@@ -121,9 +132,10 @@ export default function Footer() {
 
           {/* Community */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={fadeInUp}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3 className="text-lg font-semibold text-white mb-6">Community</h3>
             <ul className="space-y-3">
@@ -176,9 +188,10 @@ export default function Footer() {
         {/* Bottom Section */}
         <motion.div
           className="pt-8 border-t border-ink-800"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+          variants={fadeInUp}
+          transition={{ duration: 0.8, delay: 0.3 }}
         >
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
@@ -198,9 +211,10 @@ export default function Footer() {
       <motion.button
         onClick={scrollToTop}
         className="fixed bottom-8 right-8 w-12 h-12 bg-gold-300 hover:bg-gold-200 text-ink-900 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-40"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.8 }}
+        initial="hidden"
+        animate={isVisible ? 'visible' : 'hidden'}
+        variants={fadeInUp}
+        transition={{ duration: 0.8, delay: 0.8 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         aria-label="Scroll to top"
