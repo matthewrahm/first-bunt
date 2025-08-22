@@ -30,7 +30,7 @@ export function useScrollAnimation(options: ScrollAnimationOptions = {}) {
       },
       {
         threshold,
-        rootMargin: '0px 0px -50px 0px', // Start animation slightly before element comes into view
+        rootMargin: '0px 0px -150px 0px', // Start animation earlier - when element is 150px below viewport
       }
     );
 

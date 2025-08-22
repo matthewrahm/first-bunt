@@ -12,7 +12,7 @@ import {
 export default function AboutSection() {
   const { isVisible, elementRef } = useScrollAnimation({
     threshold: 0.1,
-    delay: 200,
+    delay: 100,
   });
 
   const features = [
@@ -69,13 +69,13 @@ export default function AboutSection() {
           initial="hidden"
           animate={isVisible ? 'visible' : 'hidden'}
           variants={fadeInUp}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
         >
           <div className="flex justify-center mb-6">
             <img
               src="/blunttext.png"
               alt="$BLUNT Logo"
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -95,7 +95,7 @@ export default function AboutSection() {
             initial="hidden"
             animate={isVisible ? 'visible' : 'hidden'}
             variants={fadeInLeft}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h3 className="text-3xl font-bold text-white mb-6">
               The Story Behind <span className="text-gold-300">$BLUNT</span>
@@ -141,7 +141,7 @@ export default function AboutSection() {
             initial="hidden"
             animate={isVisible ? 'visible' : 'hidden'}
             variants={fadeInRight}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="relative">
               {/* Background glow */}
@@ -153,7 +153,7 @@ export default function AboutSection() {
                   <img
                     src="/blunttext.png"
                     alt="$BLUNT Logo"
-                    className="h-20 w-auto"
+                    className="h-24 w-auto"
                   />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
@@ -232,7 +232,7 @@ export default function AboutSection() {
               <img
                 src="/blunttext.png"
                 alt="$BLUNT Logo"
-                className="h-20 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <h3 className="text-3xl font-bold text-white mb-6">

@@ -122,7 +122,7 @@ export default function CASection({
             <img
               src="/blunttext.png"
               alt="$BLUNT Logo"
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

@@ -72,7 +72,7 @@ export default function Footer() {
               <img
                 src="/blunttext.png"
                 alt="$BLUNT Logo"
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">

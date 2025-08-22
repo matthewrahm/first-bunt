@@ -109,27 +109,27 @@ export default function HeroSpline() {
       <div className="absolute inset-0 flex flex-col justify-between z-40 pointer-events-none">
         {/* Top section - Logo */}
         <div
-          className="flex justify-center items-center pt-20 transition-all duration-1000 ease-out"
+          className="flex justify-center items-center pt-20 transition-all duration-600 ease-out"
           style={{
-            opacity: Math.min(scrollY / 50, 1),
-            transform: `translateY(${Math.max(0, 30 - scrollY / 3)}px)`,
-            filter: `blur(${Math.max(0, 3 - scrollY / 30)}px)`,
+            opacity: Math.min(scrollY / 30, 1),
+            transform: `translateY(${Math.max(0, 20 - scrollY / 2)}px)`,
+            filter: `blur(${Math.max(0, 2 - scrollY / 20)}px)`,
           }}
         >
           <img
             src="/blunttext.png"
             alt="$BLUNT Logo"
-            className="h-24 w-auto drop-shadow-2xl"
+            className="h-32 w-auto drop-shadow-2xl"
           />
         </div>
 
         {/* Bottom section - Subtext and buttons */}
         <div
-          className="flex flex-col justify-center items-center text-center text-white pb-20 transition-all duration-1000 ease-out"
+          className="flex flex-col justify-center items-center text-center text-white pb-20 transition-all duration-600 ease-out"
           style={{
-            opacity: Math.min(scrollY / 100, 1),
-            transform: `translateY(${Math.max(0, 20 - scrollY / 5)}px)`,
-            filter: `blur(${Math.max(0, 2 - scrollY / 50)}px)`,
+            opacity: Math.min(scrollY / 60, 1),
+            transform: `translateY(${Math.max(0, 15 - scrollY / 4)}px)`,
+            filter: `blur(${Math.max(0, 1.5 - scrollY / 30)}px)`,
           }}
         >
           {/* Subtext */}
