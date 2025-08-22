@@ -71,6 +71,13 @@ export default function AboutSection() {
           variants={fadeInUp}
           transition={{ duration: 0.8 }}
         >
+          <div className="flex justify-center mb-6">
+            <img
+              src="/blunttext.png"
+              alt="$BLUNT Logo"
+              className="h-16 w-auto"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="text-gold-300">$BLUNT</span>
           </h2>

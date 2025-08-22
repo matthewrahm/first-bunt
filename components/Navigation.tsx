@@ -71,7 +71,11 @@ export default function Navigation() {
                 }}
                 className="flex items-center space-x-2 text-white hover:text-gold-300 transition-colors"
               >
-                <span className="text-xl font-bold">$BLUNT</span>
+                <img
+                  src="/blunttext.png"
+                  alt="$BLUNT Logo"
+                  className="h-8 w-auto"
+                />
               </a>
             </motion.div>
 

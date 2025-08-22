@@ -69,10 +69,11 @@ export default function Footer() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold text-ink-900">BC</span>
-              </div>
-              <span className="text-2xl font-bold text-white">$BLUNT</span>
+              <img
+                src="/blunttext.png"
+                alt="$BLUNT Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
               $BLUNT is the first certified runner on bunt.fun. We took the bunt
