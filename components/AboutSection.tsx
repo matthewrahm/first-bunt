@@ -142,13 +142,6 @@ export default function AboutSection() {
 
               {/* Main card */}
               <div className="relative bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-3xl p-8 text-center">
-                <div className="flex justify-center mb-6">
-                  <img
-                    src="/blunttext.png"
-                    alt="$BLUNT Logo"
-                    className="h-24 w-auto"
-                  />
-                </div>
                 <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
                 <p className="text-gold-200 mb-6">
                   The first certified runner on bunt.fun
