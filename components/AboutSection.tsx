@@ -7,8 +7,6 @@ import {
   fadeInUp,
   fadeInLeft,
   fadeInRight,
-  fadeInScale,
-  staggerContainer,
 } from '../lib/useScrollAnimation';
 
 export default function AboutSection() {
@@ -183,15 +181,15 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-                              <motion.div
-                  key={feature.title}
-                  className="group"
-                  initial="hidden"
-                  animate={isVisible ? 'visible' : 'hidden'}
-                  variants={fadeInUp}
-                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                  whileHover={{ y: -5 }}
-                >
+              <motion.div
+                key={feature.title}
+                className="group"
+                initial="hidden"
+                animate={isVisible ? 'visible' : 'hidden'}
+                variants={fadeInUp}
+                transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
+                whileHover={{ y: -5 }}
+              >
                 <div className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 h-full hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-300/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}

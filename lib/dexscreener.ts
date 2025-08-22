@@ -64,11 +64,7 @@ export interface MarketStats {
 
 // Error handling
 export class DexScreenerError extends Error {
-  constructor(
-    message: string,
-    public status?: number,
-    public code?: string
-  ) {
+  constructor(message: string) {
     super(message);
     this.name = 'DexScreenerError';
   }
@@ -101,8 +97,7 @@ export class DexScreenerClient {
 
       if (!response.ok) {
         throw new DexScreenerError(
-          `HTTP ${response.status}: ${response.statusText}`,
-          response.status
+          `HTTP ${response.status}: ${response.statusText}`
         );
       }
 
@@ -134,7 +129,6 @@ export class DexScreenerClient {
       const pair = validatedData.pairs[0];
 
       // Calculate market cap (price * total supply - simplified)
-      const priceUsd = parseFloat(pair.priceUsd || '0');
       const liquidityUsd = pair.liquidity?.usd || 0;
       const volume24h = pair.volume?.h24 || 0;
       const fdv = pair.fdv || 0;
@@ -158,17 +152,11 @@ export class DexScreenerClient {
       }
 
       if (error instanceof z.ZodError) {
-        throw new DexScreenerError(
-          `Invalid API response: ${error.message}`,
-          undefined,
-          'VALIDATION_ERROR'
-        );
+        throw new DexScreenerError(`Invalid API response: ${error.message}`);
       }
 
       throw new DexScreenerError(
-        `Failed to fetch pair data: ${error instanceof Error ? error.message : 'Unknown error'}`,
-        undefined,
-        'FETCH_ERROR'
+        `Failed to fetch pair data: ${error instanceof Error ? error.message : 'Unknown error'}`
       );
     }
   }

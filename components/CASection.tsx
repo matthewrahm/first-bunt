@@ -10,7 +10,6 @@ import {
   fadeInUp,
   fadeInLeft,
   fadeInRight,
-  fadeInScale,
 } from '../lib/useScrollAnimation';
 
 interface CASectionProps {
@@ -26,7 +25,10 @@ export default function CASection({
   contractAddress,
   chainId,
 }: CASectionProps) {
-  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
+  const { isVisible, elementRef } = useScrollAnimation({
+    threshold: 0.1,
+    delay: 200,
+  });
   const [copied, setCopied] = useState(false);
   const [showQR, setShowQR] = useState(false);
   const [qrCodeDataUrl, setQrCodeDataUrl] = useState<string>('');

@@ -1,15 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import useSWR from 'swr';
 import { DexScreenerClient, MarketStats } from '@/lib/dexscreener';
-import {
-  useScrollAnimation,
-  fadeInUp,
-  fadeInLeft,
-  fadeInRight,
-} from '../lib/useScrollAnimation';
+import { useScrollAnimation, fadeInUp } from '../lib/useScrollAnimation';
 import {
   TrendingUp,
   TrendingDown,
@@ -93,7 +88,10 @@ export default function StatsTicker({
   pairId,
   pollInterval = 15000,
 }: StatsTickerProps) {
-  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
+  const { isVisible, elementRef } = useScrollAnimation({
+    threshold: 0.1,
+    delay: 200,
+  });
   const [lastUpdate, setLastUpdate] = useState<Date>(new Date());
   const [error, setError] = useState<string | null>(null);
   const [isClient, setIsClient] = useState(false);

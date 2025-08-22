@@ -2,16 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { Twitter, MessageCircle, Globe, Heart, ArrowUp } from 'lucide-react';
-import {
-  useScrollAnimation,
-  fadeInUp,
-  fadeInLeft,
-  fadeInRight,
-} from '../lib/useScrollAnimation';
+import { useScrollAnimation, fadeInUp } from '../lib/useScrollAnimation';
 
 export default function Footer() {
-  const { isVisible, elementRef } = useScrollAnimation({ threshold: 0.1, delay: 200 });
-  
+  const { isVisible, elementRef } = useScrollAnimation({
+    threshold: 0.1,
+    delay: 200,
+  });
+
   const socialLinks = [
     {
       name: 'Twitter',
@@ -45,7 +43,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-ink-900 border-t border-ink-800 relative overflow-hidden" ref={elementRef}>
+    <footer
+      className="bg-ink-900 border-t border-ink-800 relative overflow-hidden"
+      ref={elementRef}
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
