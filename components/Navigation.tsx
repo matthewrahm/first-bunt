@@ -74,7 +74,7 @@ export default function Navigation() {
                 <img
                   src="/blunttext.png"
                   alt="$BLUNT Logo"
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
               </a>
             </motion.div>

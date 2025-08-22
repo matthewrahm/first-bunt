@@ -106,7 +106,23 @@ export default function HeroSpline() {
       />
 
       {/* Hero content overlay */}
-      <div className="absolute inset-0 flex flex-col justify-end z-40 pointer-events-none">
+      <div className="absolute inset-0 flex flex-col justify-between z-40 pointer-events-none">
+        {/* Top section - Logo */}
+        <div
+          className="flex justify-center items-center pt-20 transition-all duration-1000 ease-out"
+          style={{
+            opacity: Math.min(scrollY / 50, 1),
+            transform: `translateY(${Math.max(0, 30 - scrollY / 3)}px)`,
+            filter: `blur(${Math.max(0, 3 - scrollY / 30)}px)`,
+          }}
+        >
+          <img
+            src="/blunttext.png"
+            alt="$BLUNT Logo"
+            className="h-24 w-auto drop-shadow-2xl"
+          />
+        </div>
+
         {/* Bottom section - Subtext and buttons */}
         <div
           className="flex flex-col justify-center items-center text-center text-white pb-20 transition-all duration-1000 ease-out"

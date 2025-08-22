@@ -118,6 +118,13 @@ export default function CASection({
           variants={fadeInUp}
           transition={{ duration: 0.8 }}
         >
+          <div className="flex justify-center mb-6">
+            <img
+              src="/blunttext.png"
+              alt="$BLUNT Logo"
+              className="h-16 w-auto"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             <span className="text-gold-300">{tokenName}</span> Token
           </h2>

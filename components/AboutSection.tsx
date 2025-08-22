@@ -149,8 +149,12 @@ export default function AboutSection() {
 
               {/* Main card */}
               <div className="relative bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-3xl p-8 text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-ink-900">B</span>
+                <div className="flex justify-center mb-6">
+                  <img
+                    src="/blunttext.png"
+                    alt="$BLUNT Logo"
+                    className="h-20 w-auto"
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
                 <p className="text-gold-200 mb-6">
@@ -224,6 +228,13 @@ export default function AboutSection() {
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           <div className="bg-gradient-to-r from-ink-800/50 to-ink-700/50 border border-ink-600 rounded-2xl p-12">
+            <div className="flex justify-center mb-6">
+              <img
+                src="/blunttext.png"
+                alt="$BLUNT Logo"
+                className="h-20 w-auto"
+              />
+            </div>
             <h3 className="text-3xl font-bold text-white mb-6">
               Ready to Roll Up with{' '}
               <span className="text-gold-300">$BLUNT</span>?

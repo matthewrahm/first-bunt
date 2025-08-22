@@ -194,6 +194,13 @@ export default function StatsTicker({
           variants={fadeInUp}
           transition={{ duration: 0.8 }}
         >
+          <div className="flex justify-center mb-6">
+            <img
+              src="/blunttext.png"
+              alt="$BLUNT Logo"
+              className="h-16 w-auto"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Live <span className="text-gold-300">Market Stats</span>
           </h2>
