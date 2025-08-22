@@ -109,7 +109,7 @@ export default function HeroSpline() {
       <div className="absolute inset-0 flex flex-col justify-between z-40 pointer-events-none">
         {/* Top section - Logo */}
         <div
-          className="flex justify-center items-center pt-20 transition-all duration-600 ease-out"
+          className="flex justify-center items-center pt-32 transition-all duration-600 ease-out"
           style={{
             opacity: Math.min(scrollY / 30, 1),
             transform: `translateY(${Math.max(0, 20 - scrollY / 2)}px)`,
@@ -119,7 +119,7 @@ export default function HeroSpline() {
           <img
             src="/blunttext.png"
             alt="$BLUNT Logo"
-            className="h-32 w-auto drop-shadow-2xl"
+            className="h-40 w-auto drop-shadow-2xl"
           />
         </div>
 
