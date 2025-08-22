@@ -80,7 +80,7 @@ export default function HeroSpline() {
 
       {/* Direct Spline Viewer - Using external URL without branding */}
       <spline-viewer
-        url="https://prod.spline.design/PWEvFtXYjYKhHjZ9/scene.splinecode"
+        url="https://prod.spline.design/de0sjz54PTNiLHaD/scene.splinecode"
         className="w-full h-full"
         style={{
           position: 'absolute',
@@ -89,7 +89,7 @@ export default function HeroSpline() {
           width: '100%',
           height: '100%',
           willChange: 'transform',
-          transform: 'translateZ(0)',
+          transform: 'translateZ(0) scale(2.0)',
           backfaceVisibility: 'hidden',
           perspective: '1000px',
           zIndex: 5,
