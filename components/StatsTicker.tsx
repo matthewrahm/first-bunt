@@ -43,15 +43,15 @@ function StatCard({
 
   return (
     <motion.div
-      className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-300/10"
+      className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 hover:border-silver-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-silver-300/10"
       whileHover={{ y: -2 }}
       initial="hidden"
       animate={isVisible ? 'visible' : 'hidden'}
       variants={fadeInUp}
     >
       <div className="flex items-center justify-between mb-4">
-        <div className="p-2 bg-gold-300/10 rounded-lg">
-          <Icon className="w-6 h-6 text-gold-300" />
+        <div className="p-2 bg-silver-300/10 rounded-lg">
+          <Icon className="w-6 h-6 text-silver-300" />
         </div>
         {change !== undefined && (
           <div
@@ -202,9 +202,9 @@ export default function StatsTicker({
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Live <span className="text-gold-300">Market Stats</span>
+            Live <span className="text-silver-300">Market Stats</span>
           </h2>
-          <p className="text-xl text-gold-200 max-w-2xl mx-auto">
+          <p className="text-xl text-silver-200 max-w-2xl mx-auto">
             Real-time data from DEX Screener. Updated every{' '}
             {isClient ? pollInterval / 1000 : '--'} seconds.
           </p>
@@ -293,7 +293,7 @@ export default function StatsTicker({
               href={stats.dexUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-gold-300 hover:bg-gold-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gold-300/25"
+              className="inline-flex items-center gap-3 bg-silver-300 hover:bg-silver-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-silver-300/25"
             >
               <BarChart3 className="w-6 h-6" />
               View Chart on Dexscreener
@@ -308,8 +308,8 @@ export default function StatsTicker({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <div className="inline-flex items-center gap-2 text-gold-300">
-              <div className="w-4 h-4 border-2 border-gold-300 border-t-transparent rounded-full animate-spin"></div>
+            <div className="inline-flex items-center gap-2 text-silver-300">
+              <div className="w-4 h-4 border-2 border-silver-300 border-t-transparent rounded-full animate-spin"></div>
               <span className="text-sm">Updating...</span>
             </div>
           </motion.div>

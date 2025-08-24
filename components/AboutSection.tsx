@@ -21,42 +21,42 @@ export default function AboutSection() {
       title: 'Moon Mission',
       description:
         'Built for the community, by the community. Our goal is simple: to the moon and beyond!',
-      color: 'from-yellow-400 to-gold-500',
+      color: 'from-yellow-400 to-silver-500',
     },
     {
       icon: Users,
       title: 'Strong Community',
       description:
         'Join thousands of Bunt Coin holders who believe in the power of community-driven projects.',
-      color: 'from-gold-300 to-yellow-500',
+      color: 'from-silver-300 to-yellow-500',
     },
     {
       icon: Shield,
       title: 'Secure & Transparent',
       description:
         'Built on Solana with audited smart contracts and transparent tokenomics.',
-      color: 'from-yellow-500 to-gold-400',
+      color: 'from-yellow-500 to-silver-400',
     },
     {
       icon: Zap,
       title: 'Lightning Fast',
       description:
         'Solana blockchain ensures instant transactions and minimal fees for all your trading needs.',
-      color: 'from-gold-400 to-yellow-600',
+      color: 'from-silver-400 to-yellow-600',
     },
     {
       icon: Star,
       title: 'Innovation First',
       description:
         'Constantly evolving with new features, partnerships, and community-driven initiatives.',
-      color: 'from-yellow-300 to-gold-500',
+      color: 'from-yellow-300 to-silver-500',
     },
     {
       icon: Heart,
       title: 'Community Driven',
       description:
         'Every decision is made with the community in mind. Your voice matters!',
-      color: 'from-gold-500 to-yellow-400',
+      color: 'from-silver-500 to-yellow-400',
     },
   ];
 
@@ -72,9 +72,9 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-gold-300">$BLUNT</span>
+            About <span className="text-silver-300">$BLUNT</span>
           </h2>
-          <p className="text-xl text-gold-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-silver-200 max-w-3xl mx-auto leading-relaxed">
             $BLUNT is the first certified runner on bunt.fun. We took the bunt
             ecosystem, rolled it up, and are smoking on all the rewards. Come
             roll up with a $BLUNT!
@@ -91,7 +91,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h3 className="text-3xl font-bold text-white mb-6">
-              The Story Behind <span className="text-gold-300">$BLUNT</span>
+              The Story Behind <span className="text-silver-300">$BLUNT</span>
             </h3>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
@@ -114,15 +114,15 @@ export default function AboutSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-300">1000+</div>
+                <div className="text-3xl font-bold text-silver-300">1000+</div>
                 <div className="text-sm text-gray-400">Holders</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-300">24/7</div>
+                <div className="text-3xl font-bold text-silver-300">24/7</div>
                 <div className="text-sm text-gray-400">Support</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-300">∞</div>
+                <div className="text-3xl font-bold text-silver-300">∞</div>
                 <div className="text-sm text-gray-400">Potential</div>
               </div>
             </div>
@@ -138,22 +138,22 @@ export default function AboutSection() {
           >
             <div className="relative">
               {/* Background glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold-300/20 to-gold-500/20 rounded-3xl blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-silver-300/20 to-silver-500/20 rounded-3xl blur-3xl"></div>
 
               {/* Main card */}
               <div className="relative bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-3xl p-8 text-center">
                 <h4 className="text-2xl font-bold text-white mb-4">$BLUNT</h4>
-                <p className="text-gold-200 mb-6">
+                <p className="text-silver-200 mb-6">
                   The first certified runner on bunt.fun
                 </p>
                 <div className="space-y-3 text-sm text-gray-300">
                   <div className="flex justify-between">
                     <span>Chain:</span>
-                    <span className="text-gold-300">Solana</span>
+                    <span className="text-silver-300">Solana</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Type:</span>
-                    <span className="text-gold-300">Meme Coin</span>
+                    <span className="text-silver-300">Meme Coin</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Status:</span>
@@ -173,7 +173,7 @@ export default function AboutSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <h3 className="text-3xl font-bold text-white text-center mb-12">
-            Why Choose <span className="text-gold-300">$BLUNT</span>?
+            Why Choose <span className="text-silver-300">$BLUNT</span>?
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -187,7 +187,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                 whileHover={{ y: -5 }}
               >
-                <div className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 h-full hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-300/10">
+                <div className="bg-ink-800/80 backdrop-blur-sm border border-ink-700 rounded-xl p-6 h-full hover:border-silver-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-silver-300/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
                   >
@@ -216,22 +216,22 @@ export default function AboutSection() {
           <div className="bg-gradient-to-r from-ink-800/50 to-ink-700/50 border border-ink-600 rounded-2xl p-12">
             <h3 className="text-3xl font-bold text-white mb-6">
               Ready to Roll Up with{' '}
-              <span className="text-gold-300">$BLUNT</span>?
+              <span className="text-silver-300">$BLUNT</span>?
             </h3>
-            <p className="text-xl text-gold-200 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-silver-200 mb-8 max-w-2xl mx-auto">
               Don't miss out on the first certified runner on bunt.fun. Join
               thousands of holders who are already smoking the competition!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#token"
-                className="bg-gold-300 hover:bg-gold-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gold-300/25"
+                className="bg-silver-300 hover:bg-silver-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-silver-300/25"
               >
                 Get $BLUNT Now
               </a>
               <a
                 href="#live-stats"
-                className="border-2 border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-silver-300 text-silver-300 hover:bg-silver-300 hover:text-ink-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105"
               >
                 View Live Stats
               </a>

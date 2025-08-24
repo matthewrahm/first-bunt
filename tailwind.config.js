@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gold: {
-          50: '#FFF9E6',
-          100: '#FFF2CC',
-          200: '#FFE08A',
-          300: '#F5D76E',
-          400: '#E6C558',
-          500: '#B28D00',
+        silver: {
+          50: '#F8F9FA',
+          100: '#E9ECEF',
+          200: '#DEE2E6',
+          300: '#CED4DA',
+          400: '#ADB5BD',
+          500: '#6C757D',
         },
         ink: {
           900: '#0B0B0B',

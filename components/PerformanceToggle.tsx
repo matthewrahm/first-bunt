@@ -24,7 +24,7 @@ export default function PerformanceToggle({
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 text-gold-200 hover:text-gold-300 transition-colors px-3 py-2 rounded-full"
+          className="flex items-center space-x-2 text-silver-200 hover:text-silver-300 transition-colors px-3 py-2 rounded-full"
         >
           <div className="w-3 h-3 rounded-full bg-current" />
           <span className="text-sm font-medium">
@@ -60,8 +60,8 @@ export default function PerformanceToggle({
                 }}
                 className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
                   currentMode === 'performance'
-                    ? 'bg-gold-300 text-ink-900 font-medium'
-                    : 'text-gold-200 hover:bg-ink-700'
+                    ? 'bg-silver-300 text-ink-900 font-medium'
+                    : 'text-silver-200 hover:bg-ink-700'
                 }`}
               >
                 🚀 Performance Mode
@@ -76,8 +76,8 @@ export default function PerformanceToggle({
                 }}
                 className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
                   currentMode === 'quality'
-                    ? 'bg-gold-300 text-ink-900 font-medium'
-                    : 'text-gold-200 hover:bg-ink-700'
+                    ? 'bg-silver-300 text-ink-900 font-medium'
+                    : 'text-silver-200 hover:bg-ink-700'
                 }`}
               >
                 ✨ Quality Mode

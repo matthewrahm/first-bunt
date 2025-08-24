@@ -5,12 +5,12 @@
 /* Removed external font import for better performance */
 
 :root {
-  --gold-50: #fff9e6;
-  --gold-100: #fff2cc;
-  --gold-200: #ffe08a;
-  --gold-300: #f5d76e;
-  --gold-400: #e6c558;
-  --gold-500: #b28d00;
+  --silver-50: #F8F9FA;
+  --silver-100: #E9ECEF;
+  --silver-200: #DEE2E6;
+  --silver-300: #CED4DA;
+  --silver-400: #ADB5BD;
+  --silver-500: #6C757D;
   --ink-900: #0b0b0b;
   --ink-800: #111111;
   --ink-700: #1b1b1b;
@@ -125,7 +125,7 @@ a {
   position: absolute;
   top: -40px;
   left: 6px;
-  background: var(--gold-300);
+  background: var(--silver-300);
   color: var(--ink-900);
   padding: 8px;
   text-decoration: none;
@@ -147,12 +147,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gold-400);
+  background: var(--silver-400);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-300);
+  background: var(--silver-300);
 }
 
 /* Reduced motion support */

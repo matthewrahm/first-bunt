@@ -27,7 +27,7 @@ export default function Footer() {
       name: 'Website',
       icon: Globe,
       href: 'https://buntcoin.com',
-      color: 'hover:text-gold-300',
+      color: 'hover:text-silver-300',
     },
   ];
 
@@ -89,7 +89,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-10 h-10 bg-ink-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-gold-300 hover:text-ink-900 ${social.color}`}
+                  className={`w-10 h-10 bg-ink-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 hover:bg-silver-300 hover:text-ink-900 ${social.color}`}
                   initial="hidden"
                   animate={isVisible ? 'visible' : 'hidden'}
                   variants={fadeInUp}
@@ -123,7 +123,7 @@ export default function Footer() {
                 >
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-gold-300 transition-colors duration-300"
+                    className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -150,7 +150,7 @@ export default function Footer() {
                   href="https://t.me/buntcoin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gold-300 transition-colors duration-300"
+                  className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                 >
                   Telegram Group
                 </a>
@@ -164,7 +164,7 @@ export default function Footer() {
                   href="https://twitter.com/buntcoin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gold-300 transition-colors duration-300"
+                  className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                 >
                   Twitter
                 </a>
@@ -178,7 +178,7 @@ export default function Footer() {
                   href="https://discord.gg/buntcoin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gold-300 transition-colors duration-300"
+                  className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                 >
                   Discord
                 </a>
@@ -212,7 +212,7 @@ export default function Footer() {
       {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-gold-300 hover:bg-gold-200 text-ink-900 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-40"
+        className="fixed bottom-8 right-8 w-12 h-12 bg-silver-300 hover:bg-silver-200 text-ink-900 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-40"
         initial="hidden"
         animate={isVisible ? 'visible' : 'hidden'}
         variants={fadeInUp}

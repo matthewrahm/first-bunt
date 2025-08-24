@@ -69,7 +69,7 @@ export default function Navigation() {
                   e.preventDefault();
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="flex items-center space-x-2 text-white hover:text-gold-300 transition-colors"
+                className="flex items-center space-x-2 text-white hover:text-silver-300 transition-colors"
               >
                 <img
                   src="/blunttext.png"
@@ -85,21 +85,21 @@ export default function Navigation() {
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-gray-300 hover:text-gold-300 transition-colors font-medium relative group"
+                  className="text-gray-300 hover:text-silver-300 transition-colors font-medium relative group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   whileHover={{ y: -2 }}
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-300 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-silver-300 transition-all duration-300 group-hover:w-full"></span>
                 </motion.button>
               ))}
 
               {/* CTA Button */}
               <motion.button
                 onClick={() => scrollToSection('token')}
-                className="bg-gold-300 hover:bg-gold-200 text-ink-900 px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gold-300/25"
+                className="bg-silver-300 hover:bg-silver-200 text-ink-900 px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-silver-300/25"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -112,7 +112,7 @@ export default function Navigation() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-300 hover:text-gold-300 transition-colors p-2"
+                className="text-gray-300 hover:text-silver-300 transition-colors p-2"
                 aria-label="Toggle mobile menu"
               >
                 {isOpen ? (
@@ -167,7 +167,7 @@ export default function Navigation() {
                 {/* Mobile CTA Button */}
                 <motion.button
                   onClick={() => scrollToSection('token')}
-                  className="w-full bg-gold-300 hover:bg-gold-200 text-ink-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-silver-300 hover:bg-silver-200 text-ink-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.3, delay: 0.4 }}
@@ -182,7 +182,7 @@ export default function Navigation() {
 
       {/* Scroll Progress Indicator */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-300 to-gold-500 origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-silver-300 to-silver-500 origin-left z-50"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: scrollProgress }}
         transition={{ duration: 0.1 }}

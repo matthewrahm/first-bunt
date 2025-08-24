@@ -133,7 +133,7 @@ export default function HeroSpline() {
           }}
         >
           {/* Subtext */}
-          <p className="text-xl md:text-2xl text-gold-200 mb-8 max-w-2xl mx-auto text-center">
+          <p className="text-xl md:text-2xl text-silver-200 mb-8 max-w-2xl mx-auto text-center">
             $BLUNT is the first certified runner on bunt.fun. Come roll up with
             a $BLUNT!
           </p>
@@ -142,13 +142,13 @@ export default function HeroSpline() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#about"
-              className="bg-gold-300 hover:bg-gold-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg pointer-events-auto"
+              className="bg-silver-300 hover:bg-silver-200 text-ink-900 px-8 py-4 rounded-full font-bold text-lg pointer-events-auto"
             >
               Learn More
             </a>
             <a
               href="#token"
-              className="border-2 border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-ink-900 px-8 py-4 rounded-full font-bold text-lg pointer-events-auto"
+              className="border-2 border-silver-300 text-silver-300 hover:bg-silver-300 hover:text-ink-900 px-8 py-4 rounded-full font-bold text-lg pointer-events-auto"
             >
               Get Token
             </a>

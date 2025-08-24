@@ -119,9 +119,9 @@ export default function CASection({
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-gold-300">{tokenName}</span> Token
+            <span className="text-silver-300">{tokenName}</span> Token
           </h2>
-          <p className="text-xl text-gold-200 max-w-2xl mx-auto">
+          <p className="text-xl text-silver-200 max-w-2xl mx-auto">
             Get your hands on {tokenSymbol} tokens. Copy the contract address
             below to add to your wallet.
           </p>
@@ -138,7 +138,7 @@ export default function CASection({
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-gold-300 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-silver-300 to-silver-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl font-bold text-ink-900">
                   {tokenSymbol[0]}
                 </span>
@@ -146,7 +146,7 @@ export default function CASection({
               <h3 className="text-2xl font-bold text-white mb-2">
                 {tokenName}
               </h3>
-              <p className="text-gold-200 text-lg mb-4">
+              <p className="text-silver-200 text-lg mb-4">
                 Symbol: {tokenSymbol}
               </p>
               <div className="inline-flex items-center gap-2 bg-ink-700/50 px-4 py-2 rounded-full">
@@ -171,7 +171,7 @@ export default function CASection({
             {/* Address Display */}
             <div className="bg-ink-900/50 border border-ink-600 rounded-lg p-4 mb-6">
               <div className="flex items-center justify-between">
-                <code className="text-gold-300 font-mono text-sm break-all">
+                <code className="text-silver-300 font-mono text-sm break-all">
                   {truncateAddress(contractAddress)}
                 </code>
                 <button
@@ -182,7 +182,7 @@ export default function CASection({
                   {copied ? (
                     <Check className="w-5 h-5 text-green-400" />
                   ) : (
-                    <Copy className="w-5 h-5 text-gold-300 group-hover:text-gold-200" />
+                    <Copy className="w-5 h-5 text-silver-300 group-hover:text-silver-200" />
                   )}
                 </button>
               </div>
@@ -192,7 +192,7 @@ export default function CASection({
             <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={generateQRCode}
-                className="flex-1 flex items-center justify-center gap-2 bg-gold-300 hover:bg-gold-200 text-ink-900 px-4 py-3 rounded-lg font-medium transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 bg-silver-300 hover:bg-silver-200 text-ink-900 px-4 py-3 rounded-lg font-medium transition-colors"
               >
                 <QrCode className="w-5 h-5" />
                 {showQR ? 'Hide QR' : 'Show QR'}
@@ -246,7 +246,7 @@ export default function CASection({
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="text-center">
-                <div className="w-12 h-12 bg-gold-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-2xl">1</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Copy Address</h4>
@@ -256,7 +256,7 @@ export default function CASection({
               </div>
 
               <div className="text-center">
-                <div className="w-12 h-12 bg-gold-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-2xl">2</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Add to Wallet</h4>
@@ -266,7 +266,7 @@ export default function CASection({
               </div>
 
               <div className="text-center">
-                <div className="w-12 h-12 bg-gold-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-2xl">3</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Start Trading</h4>
