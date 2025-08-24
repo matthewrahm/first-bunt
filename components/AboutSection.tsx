@@ -63,13 +63,37 @@ export default function AboutSection() {
   return (
     <section className="py-20 px-4" id="about" ref={elementRef}>
       <div className="max-w-6xl mx-auto">
+        {/* Banner Image */}
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+          variants={fadeInUp}
+          transition={{ duration: 0.8, delay: 0.1 }}
+        >
+          <div className="relative inline-block">
+            {/* Background glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-silver-300/20 via-silver-400/20 to-silver-500/20 rounded-2xl blur-2xl scale-110"></div>
+
+            {/* Banner image with rounded corners and subtle border */}
+            <img
+              src="/bluntbanner.jpg"
+              alt="$BLUNT Banner - First Certified Runner on bunt.fun"
+              className="relative rounded-2xl border border-silver-300/20 shadow-2xl shadow-silver-300/10 max-w-4xl w-full h-auto"
+            />
+
+            {/* Subtle overlay for better text contrast if needed */}
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-900/10 to-transparent rounded-2xl pointer-events-none"></div>
+          </div>
+        </motion.div>
+
         {/* Section Header */}
         <motion.div
           className="text-center mb-20"
           initial="hidden"
           animate={isVisible ? 'visible' : 'hidden'}
           variants={fadeInUp}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="text-silver-300">$BLUNT</span>
