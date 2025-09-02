@@ -72,9 +72,9 @@ export default function Navigation() {
                 className="flex items-center space-x-2 text-white hover:text-silver-300 transition-colors"
               >
                 <img
-                  src="/blunttext.png"
+                  src="/bluntlogo.jpg"
                   alt="$BLUNT Logo"
-                  className="h-12 w-auto"
+                  className="h-12 w-12 rounded-full object-cover border-2 border-silver-300/30 hover:border-silver-300/60 transition-all duration-300"
                 />
               </a>
             </motion.div>

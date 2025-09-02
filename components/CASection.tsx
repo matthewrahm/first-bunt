@@ -139,9 +139,11 @@ export default function CASection({
           >
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-silver-300 to-silver-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-ink-900">
-                  {tokenSymbol[0]}
-                </span>
+                <img
+                  src="/bluntlogo.jpg"
+                  alt="$BLUNT Logo"
+                  className="w-14 h-14 rounded-full object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 {tokenName}
@@ -242,12 +244,12 @@ export default function CASection({
         >
           <div className="bg-ink-800/50 border border-ink-700 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-white mb-4">
-              How to Add {tokenSymbol}
+              How to Add $BLUNT
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="text-center">
                 <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-2xl">1</span>
+                  <span className="text-2xl font-bold text-silver-300">1</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Copy Address</h4>
                 <p className="text-sm text-gray-300">
@@ -257,7 +259,7 @@ export default function CASection({
 
               <div className="text-center">
                 <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-2xl">2</span>
+                  <span className="text-2xl font-bold text-silver-300">2</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Add to Wallet</h4>
                 <p className="text-sm text-gray-300">
@@ -267,7 +269,7 @@ export default function CASection({
 
               <div className="text-center">
                 <div className="w-12 h-12 bg-silver-300/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-2xl">3</span>
+                  <span className="text-2xl font-bold text-silver-300">3</span>
                 </div>
                 <h4 className="font-semibold text-white mb-2">Start Trading</h4>
                 <p className="text-sm text-gray-300">

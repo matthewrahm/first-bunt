@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import HeroSpline from '@/components/HeroSpline';
 import AboutSection from '@/components/AboutSection';
+import LivePriceSection from '@/components/LivePriceSection';
 import CASection from '@/components/CASection';
 import StatsTicker from '@/components/StatsTicker';
 import Footer from '@/components/Footer';
@@ -34,6 +35,9 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection />
+
+      {/* Live Price & Market Cap Section */}
+      <LivePriceSection />
 
       {/* Token/Contract Address Section */}
       <CASection
