@@ -38,8 +38,8 @@ export default function Navigation() {
   // Navigation items
   const navItems = [
     { id: 'about', label: 'About', href: '#about' },
+    { id: 'live-price', label: 'Live Price', href: '#live-price' },
     { id: 'token', label: 'Token', href: '#token' },
-    { id: 'live-stats', label: 'Live Stats', href: '#live-stats' },
   ];
 
   return (

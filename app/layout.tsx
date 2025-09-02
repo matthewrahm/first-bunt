@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   creator: '$BLUNT Team',
   publisher: '$BLUNT',
   robots: 'index, follow',
+  icons: {
+    icon: '/bluntlogo.jpg',
+    shortcut: '/bluntlogo.jpg',
+    apple: '/bluntlogo.jpg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -91,8 +96,8 @@ export default function RootLayout({
             duration: 3000,
             style: {
               background: '#111111',
-              color: '#F5D76E',
-              border: '1px solid #F5D76E',
+              color: '#CED4DA',
+              border: '1px solid #CED4DA',
             },
           }}
         />
