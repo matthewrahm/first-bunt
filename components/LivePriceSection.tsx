@@ -39,7 +39,7 @@ export default function LivePriceSection() {
   const [isLoading, setIsLoading] = useState(false);
 
   // Contract address for $BLUNT token
-  const contractAddress = 'FILLER_CONTRACT_ADDRESS_HERE'; // Placeholder - waiting for real CA
+  const contractAddress = '6h1ACr3LWM1YgVqxwcqEVJtHA2ygT8Z7tutYMy3gbunt'; // $BLUNT token contract address
 
   // Function to fetch real data from DEX Screener
   const fetchTokenData = async () => {
