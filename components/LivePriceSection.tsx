@@ -265,7 +265,7 @@ export default function LivePriceSection() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.a
-                href={`https://jup.ag/swap?inputMint=So11111111111111111111111111111111111111112&outputMint=${contractAddress}`}
+                href={`https://jup.ag/swap?outputMint=${contractAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 bg-silver-300 hover:bg-silver-200 text-ink-900 px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
