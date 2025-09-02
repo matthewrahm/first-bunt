@@ -14,7 +14,7 @@ const CONFIG = {
   CHAIN_ID: process.env.NEXT_PUBLIC_CHAIN_ID || 'solana',
   TOKEN_ADDRESS:
     process.env.NEXT_PUBLIC_TOKEN_ADDRESS ||
-    'So11111111111111111111111111111111111111112', // [ASSUMED placeholder]
+    'GRubKRCLHRnKpZSkLxgRAB16YS1EkNqtqrLgnKQmbunt', // $BLUNT token address
   PAIR_ID:
     process.env.NEXT_PUBLIC_PAIR_ID || 'REPLACE_WITH_DEXSCREENER_PAIR_ID', // [ASSUMED placeholder]
 

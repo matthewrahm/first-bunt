@@ -39,7 +39,7 @@ export default function LivePriceSection() {
   const [isLoading, setIsLoading] = useState(false);
 
   // Contract address for $BLUNT token
-  const contractAddress = '5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2';
+  const contractAddress = 'GRubKRCLHRnKpZSkLxgRAB16YS1EkNqtqrLgnKQmbunt';
 
   // Function to fetch real data from DEX Screener
   const fetchTokenData = async () => {

@@ -17,18 +17,6 @@ export default function Footer() {
       href: 'https://twitter.com/buntcoin',
       color: 'hover:text-blue-400',
     },
-    {
-      name: 'Telegram',
-      icon: MessageCircle,
-      href: 'https://t.me/buntcoin',
-      color: 'hover:text-blue-500',
-    },
-    {
-      name: 'Website',
-      icon: Globe,
-      href: 'https://buntcoin.com',
-      color: 'hover:text-silver-300',
-    },
   ];
 
   const quickLinks = [
@@ -147,12 +135,12 @@ export default function Footer() {
                 transition={{ duration: 0.4, delay: 0.4 }}
               >
                 <a
-                  href="https://t.me/buntcoin"
+                  href="https://twitter.com/buntcoin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                 >
-                  Telegram Group
+                  Twitter
                 </a>
               </motion.li>
               <motion.li
@@ -166,21 +154,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
                 >
-                  Twitter
-                </a>
-              </motion.li>
-              <motion.li
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.6 }}
-              >
-                <a
-                  href="https://discord.gg/buntcoin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
-                >
-                  Discord
+                  Twitter Community
                 </a>
               </motion.li>
             </ul>
