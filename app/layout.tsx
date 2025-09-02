@@ -67,7 +67,10 @@ export default function RootLayout({
               url: 'https://buntcoin.com',
               logo: 'https://buntcoin.com/logo.png',
               description: 'The first certified runner on bunt.fun',
-              sameAs: ['https://twitter.com/buntcoin', 'https://t.me/buntcoin'],
+              sameAs: [
+                'https://x.com/thebluntcoin?s=21&t=CwuNiaW1XHnG_DOzzU03AA',
+                'https://t.me/buntcoin',
+              ],
             }),
           }}
         />

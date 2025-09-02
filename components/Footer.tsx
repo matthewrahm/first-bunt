@@ -14,7 +14,7 @@ export default function Footer() {
     {
       name: 'Twitter',
       icon: Twitter,
-      href: 'https://twitter.com/buntcoin',
+      href: 'https://x.com/thebluntcoin?s=21&t=CwuNiaW1XHnG_DOzzU03AA',
       color: 'hover:text-blue-400',
     },
   ];
@@ -135,7 +135,7 @@ export default function Footer() {
                 transition={{ duration: 0.4, delay: 0.4 }}
               >
                 <a
-                  href="https://twitter.com/buntcoin"
+                  href="https://x.com/thebluntcoin?s=21&t=CwuNiaW1XHnG_DOzzU03AA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
@@ -149,7 +149,7 @@ export default function Footer() {
                 transition={{ duration: 0.4, delay: 0.5 }}
               >
                 <a
-                  href="https://twitter.com/buntcoin"
+                  href="https://x.com/i/communities/1962970261055229993"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-silver-300 transition-colors duration-300"
