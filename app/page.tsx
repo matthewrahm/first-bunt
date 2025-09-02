@@ -13,8 +13,7 @@ const CONFIG = {
   TOKEN_SYMBOL: 'BLUNT',
   CHAIN_ID: process.env.NEXT_PUBLIC_CHAIN_ID || 'solana',
   TOKEN_ADDRESS:
-    process.env.NEXT_PUBLIC_TOKEN_ADDRESS ||
-    'GRubKRCLHRnKpZSkLxgRAB16YS1EkNqtqrLgnKQmbunt', // $BLUNT token address
+    process.env.NEXT_PUBLIC_TOKEN_ADDRESS || 'FILLER_CONTRACT_ADDRESS_HERE', // Placeholder - waiting for real CA
   PAIR_ID:
     process.env.NEXT_PUBLIC_PAIR_ID || 'REPLACE_WITH_DEXSCREENER_PAIR_ID', // [ASSUMED placeholder]
 
