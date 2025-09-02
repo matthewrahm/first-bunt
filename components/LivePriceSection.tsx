@@ -7,7 +7,6 @@ import {
   BarChart3,
   TrendingUp,
   TrendingDown,
-  Zap,
   ExternalLink,
 } from 'lucide-react';
 
@@ -263,24 +262,12 @@ export default function LivePriceSection() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href={`https://jup.ag/swap?outputMint=${contractAddress}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 bg-silver-300 hover:bg-silver-200 text-ink-900 px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Zap className="w-5 h-5" />
-                <span>Buy on Jup.ag</span>
-              </motion.a>
-
+            <div className="flex justify-center">
               <motion.a
                 href={`https://dexscreener.com/solana/${contractAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-ink-700/80 border border-silver-300 text-silver-300 hover:bg-silver-300 hover:text-ink-900 px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                className="bg-ink-700/80 border border-silver-300 text-silver-300 hover:bg-silver-300 hover:text-ink-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
